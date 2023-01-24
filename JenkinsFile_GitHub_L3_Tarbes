@@ -1,0 +1,24 @@
+pipeline {
+    /* je suis un commentaire */
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        
+        stage('Build') {
+            steps {
+                echo 'development'
+            }
+        }
+        
+        stage('Deploy') {
+            steps {
+                echo 'Mise en production'
+            }
+        }
+    }
+}
